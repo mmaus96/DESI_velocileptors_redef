@@ -1,0 +1,55 @@
+# LRG
+alpha0_LRG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+  
+alpha2_LRG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+  
+alpha4_LRG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+
+SN0_LRG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2000.
+  
+SN2_LRG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.0e+4
+
+SN4_LRG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 1.0e+6
+  
+#post-recon params
+M0_LRG:
+  mean: 0.
+  std: 5.0e+5
+  
+M1_LRG:
+  mean: 0.
+  std: 5.0e+5
+  
+Q0_LRG:
+  mean: 0.
+  std: 5.0e+5
+  
+Q1_LRG:
+  mean: 0.
+  std: 5.0e+5
+  
+Q0sp_LRG:
+  mean: 0.
+  std: 5.0e+5
+
+Q1sp_LRG:
+  mean: 0.
+  std: 5.0e+5

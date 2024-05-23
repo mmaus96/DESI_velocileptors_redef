@@ -1,0 +1,72 @@
+# zfid:     0.8 [0.30,0.51,0.71,0.92,0.96,1.32,1.49]
+zfids:
+- 0.25
+- 0.5
+- 0.7
+- 0.95
+- 0.95
+- 1.35
+- 1.45
+# - 0.30
+# - 0.51
+# - 0.71
+# - 0.92
+# - 0.96
+# - 1.34
+# - 1.49
+
+fs_sample_names:
+- BGS
+- LRG1
+- LRG2
+- LRG3
+- ELG1
+- ELG2
+- QSO
+
+# The file paths below assume the chain/code will be
+# running in the directory where the BOSSxPlanck repo
+# has been cloned.  Otherwise, override these with the
+# full path.
+
+# basedir: /pscratch/sd/m/mmaus/ShapeFit_DESI_Cutsky/mock_data/DESI_bins/
+
+fs_datfns: 
+- mock_data/DESI_bins/Cutsky/pk/BGS_z0.1_0.4/mock_mean.txt
+- mock_data/DESI_bins/Cutsky/pk/LRG_z0.4_0.6/mock_mean.txt
+- mock_data/DESI_bins/Cutsky/pk/LRG_z0.6_0.8/mock_mean.txt
+- mock_data/DESI_bins/Cutsky/pk/LRG_z0.8_1.1/mock_mean.txt
+- mock_data/DESI_bins/Cutsky/pk/ELG_z0.8_1.1/mock_mean.txt
+- mock_data/DESI_bins/Cutsky/pk/ELG_z1.1_1.6/mock_mean.txt
+- mock_data/DESI_bins/Cutsky/pk/QSO_z0.8_2.1/mock_mean.txt
+
+# covfn: mock_data/LRG/covariances/cov_cut.txt
+covfn: mock_data/DESI_bins/Cutsky/covariances/joint_cov_all.txt
+
+fs_matMfns: 
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+
+fs_matWfns: 
+# - mock_data/DESI_bins/Cutsky/matrices/wmatrix_BGS_z0.1_0.4_new.txt
+# - mock_data/DESI_bins/Cutsky/matrices/wmatrix_LRG_z0.4_0.6_new.txt
+# - mock_data/DESI_bins/Cutsky/matrices/wmatrix_LRG_z0.6_0.8_new.txt
+# - mock_data/DESI_bins/Cutsky/matrices/wmatrix_LRG_z0.8_1.1_new.txt
+# - mock_data/DESI_bins/Cutsky/matrices/wmatrix_ELG_z0.8_1.1_new.txt
+# - mock_data/DESI_bins/Cutsky/matrices/wmatrix_ELG_z1.1_1.6_new.txt
+# - mock_data/DESI_bins/Cutsky/matrices/wmatrix_QSO_z0.8_2.1_new.txt
+- mock_data/DESI_bins/Cutsky/matrices/wmatrix_BGS_z0.1_0.4.txt
+- mock_data/DESI_bins/Cutsky/matrices/wmatrix_LRG_z0.4_0.6.txt
+- mock_data/DESI_bins/Cutsky/matrices/wmatrix_LRG_z0.6_0.8.txt
+- mock_data/DESI_bins/Cutsky/matrices/wmatrix_LRG_z0.8_1.1.txt
+- mock_data/DESI_bins/Cutsky/matrices/wmatrix_ELG_z0.8_1.1.txt
+- mock_data/DESI_bins/Cutsky/matrices/wmatrix_ELG_z1.1_1.6.txt
+- mock_data/DESI_bins/Cutsky/matrices/wmatrix_QSO_z0.8_2.1.txt
+
+w_kin_fn: mock_data/DESI_bins/Cutsky/matrices/w_kin.txt
+

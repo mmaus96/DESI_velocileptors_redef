@@ -1,0 +1,32 @@
+# ELG
+alpha0_ELG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+  
+alpha2_ELG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+  
+alpha4_ELG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+
+SN0_ELG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 30.
+  
+SN2_ELG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 30.
+
+SN4_ELG:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 30.
+  
+

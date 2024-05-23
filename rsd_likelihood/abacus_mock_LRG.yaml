@@ -1,0 +1,25 @@
+zfid:     0.8
+zfids:
+- 0.8
+
+fs_sample_names:
+- LRG
+
+# The file paths below assume the chain/code will be
+# running in the directory where the BOSSxPlanck repo
+# has been cloned.  Otherwise, override these with the
+# full path.
+
+basedir: /pscratch/sd/m/mmaus/Cobaya_EPT_DESI/
+
+fs_datfns: 
+- mock_data/LRG/pk/z0.800/Pk_mean.txt
+
+# covfn: mock_data/LRG/covariances/cov_cut.txt
+covfn: mock_data/LRG/covariances/cov_mean.txt
+
+fs_matMfns: 
+- mock_data/LRG/matrices/Mmat.txt
+
+fs_matWfns: 
+- mock_data/LRG/matrices/Wmat.txt

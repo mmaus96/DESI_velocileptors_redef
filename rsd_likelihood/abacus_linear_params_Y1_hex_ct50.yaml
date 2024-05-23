@@ -1,0 +1,206 @@
+# BGS
+alpha0_BGS:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 12.5
+  
+alpha2_BGS:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 12.5
+  
+alpha4_BGS:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 50.0
+
+SN0_BGS:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2000.
+  
+SN2_BGS:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.0e+4
+
+SN4_BGS:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 1.0e+6
+
+
+# LRG1
+alpha0_LRG1:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 12.5
+  
+alpha2_LRG1:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 12.5
+  
+alpha4_LRG1:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 50.
+
+SN0_LRG1:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2000.
+  
+SN2_LRG1:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.0e+4
+
+SN4_LRG1:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 1.0e+6
+
+
+  
+# LRG2
+alpha0_LRG2:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 12.5
+  
+alpha2_LRG2:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 12.5
+  
+alpha4_LRG2:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 50.0
+
+SN0_LRG2:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2000.
+  
+SN2_LRG2:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.0e+4
+
+SN4_LRG2:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 1.0e+6
+
+  
+# LRG3
+alpha0_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 12.5
+  
+alpha2_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 12.5
+  
+alpha4_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 50.0
+
+SN0_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2000.
+  
+SN2_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.0e+4
+
+SN4_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 1.0e+6
+  
+# ELG1
+alpha0_ELG1:
+  mean:   0.0
+  std: 12.5
+  
+alpha2_ELG1:
+  mean:   0.0
+  std: 12.5
+  
+alpha4_ELG1:
+  mean:   0.0
+  std: 50.0
+
+SN0_ELG1:
+  mean:   0.0
+  std: 2000.
+  
+SN2_ELG1:
+  mean:   0.0
+  std: 5.0e+4
+
+SN4_ELG1:
+  mean:   0.0
+  std: 1.0e+6
+
+
+# ELG2
+alpha0_ELG2:
+  mean:   0.0
+  std: 12.5
+  
+alpha2_ELG2:
+  mean:   0.0
+  std: 12.5
+  
+alpha4_ELG2:
+  mean:   0.0
+  std: 50.0
+
+SN0_ELG2:
+  mean:   0.0
+  std: 2000.
+  
+SN2_ELG2:
+  mean:   0.0
+  std: 5.0e+4
+
+SN4_ELG2:
+  mean:   0.0
+  std: 1.0e+6
+
+
+# QSO
+alpha0_QSO:
+  mean:   0.0
+  std: 12.5
+  
+alpha2_QSO:
+  mean:   0.0
+  std: 12.5
+  
+alpha4_QSO:
+  mean:   0.0
+  std: 50.0
+
+SN0_QSO:
+  mean:   0.0
+  std: 25000.
+  
+SN2_QSO:
+  mean:   0.0
+  std: 5.0e+5
+
+SN4_QSO:
+  mean:   0.0
+  std: 1.0e+7
+
+

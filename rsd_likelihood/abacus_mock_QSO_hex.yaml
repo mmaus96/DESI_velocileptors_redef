@@ -1,0 +1,32 @@
+zfid:     1.4
+
+zfids:
+- 1.4
+
+fs_sample_names:
+- QSO
+
+# The file paths below assume the chain/code will be
+# running in the directory where the BOSSxPlanck repo
+# has been cloned.  Otherwise, override these with the
+# full path.
+
+# basedir: /global/cscratch1/sd/mmaus/new_template/Cobaya_template/
+
+fs_datfns: 
+- mock_data/QSO/pk/Pk_mean_hex.txt
+
+# covfn: mock_data/LRG/covariances/cov_cut.txt
+covfn: mock_data/QSO/covariances/cov_ell024_V1.txt
+
+fs_matMfns: 
+- mock_data/LRG/matrices/Wmat_pypower_new.txt
+
+pypower_kin_fn:
+- mock_data/LRG/matrices/kin_pypower_new.txt
+
+pypower_kout_fn:
+- mock_data/LRG/matrices/kout_pypower_new.txt
+
+fs_matWfns: 
+- mock_data/LRG/matrices/Wmat.txt

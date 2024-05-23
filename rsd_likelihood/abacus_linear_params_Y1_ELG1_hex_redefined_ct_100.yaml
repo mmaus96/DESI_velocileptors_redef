@@ -1,0 +1,25 @@
+# ELG1
+alpha0_ELG1:
+  mean:   0.0
+  std: 5
+  
+alpha2_ELG1:
+  mean:   0.0
+  std: 5
+  
+alpha4_ELG1:
+  mean:   0.0
+  std: 5
+
+SN0_ELG1:
+  mean:   0.0
+  std: 2000.
+  
+SN2_ELG1:
+  mean:   0.0
+  std: 5.0e+4
+
+SN4_ELG1:
+  mean:   0.0
+  std: 1.0e+6
+

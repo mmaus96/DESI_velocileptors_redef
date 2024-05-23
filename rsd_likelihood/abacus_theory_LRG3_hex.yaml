@@ -1,0 +1,30 @@
+# zfid:     0.8
+zfids:
+- 0.95
+
+
+fs_sample_names:
+- LRG3
+
+
+# The file paths below assume the chain/code will be
+# running in the directory where the BOSSxPlanck repo
+# has been cloned.  Otherwise, override these with the
+# full path.
+
+# basedir: /pscratch/sd/m/mmaus/ShapeFit_DESI_Cutsky/mock_data/DESI_bins/
+
+fs_datfns: 
+- mock_data/DESI_bins/pk/LRG_theory_z0.95_kmax0.4_ell024.txt
+
+
+# covfn: mock_data/LRG/covariances/cov_cut.txt
+covfn: mock_data/DESI_bins/covariances/cov_gaussian_prerec_LRG_GCcomb_0.8_1.1_ell024.txt
+
+fs_matMfns: 
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+
+
+fs_matWfns: 
+- mock_data/DESI_bins/matrices/Wmat_k0_0.4.txt
+

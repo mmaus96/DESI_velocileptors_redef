@@ -1,0 +1,62 @@
+# zfid:     0.8
+zfids:
+# - 0.25
+- 0.5
+- 0.8
+- 0.8
+- 0.95
+- 1.325
+- 1.4
+
+fs_sample_names:
+# - BGS
+- LRG1
+- LRG2
+- LRG3
+- ELG1
+- ELG2
+- QSO
+
+# The file paths below assume the chain/code will be
+# running in the directory where the BOSSxPlanck repo
+# has been cloned.  Otherwise, override these with the
+# full path.
+
+# basedir: /pscratch/sd/m/mmaus/ShapeFit_DESI_Cutsky/mock_data/DESI_bins/
+
+fs_datfns: 
+- mock_data/DESI_bins/Folps_theory/Noiseless_DESIy1/pk/FOLPS_LRG_theory_zeff0.5_Nathan_kmax0.4_ell024_bin3.txt
+- mock_data/DESI_bins/Folps_theory/Noiseless_DESIy1/pk/FOLPS_LRG_theory_zeff0.8_Nathan_kmax0.4_ell024_bin4.txt
+- mock_data/DESI_bins/Folps_theory/Noiseless_DESIy1/pk/FOLPS_LRG_theory_zeff0.8_Nathan_kmax0.4_ell024_bin5.txt
+- mock_data/DESI_bins/Folps_theory/Noiseless_DESIy1/pk/FOLPS_ELG_theory_zeff0.95_Nathan_kmax0.4_ell024_bin1.txt
+- mock_data/DESI_bins/Folps_theory/Noiseless_DESIy1/pk/FOLPS_ELG_theory_zeff1.325_Nathan_kmax0.4_ell024_bin2.txt
+- mock_data/DESI_bins/Folps_theory/Noiseless_DESIy1/pk/FOLPS_QSO_theory_zeff1.4_Nathan_kmax0.32_ell024_bin6.txt
+# - mock_data/DESI_bins/pk/BGS_theory_z0.25_kmax0.4_ell024.txt
+# - mock_data/DESI_bins/pk/LRG_theory_z0.50_kmax0.4_ell024.txt
+# - mock_data/DESI_bins/pk/LRG_theory_z0.70_kmax0.4_ell024.txt
+# - mock_data/DESI_bins/pk/LRG_theory_z0.95_kmax0.4_ell024.txt
+# - mock_data/DESI_bins/pk/ELG_theory_z0.95_kmax0.4_ell024.txt
+# - mock_data/DESI_bins/pk/ELG_theory_z1.35_kmax0.4_ell024.txt
+# - mock_data/DESI_bins/pk/QSO_theory_z1.45_kmax0.32_ell024.txt
+
+# covfn: mock_data/LRG/covariances/cov_cut.txt
+# covfn: mock_data/DESI_bins/covariances/cov_gaussian_prerec_Joint_tracers_ell024.txt
+covfn: mock_data/DESI_bins/Folps_theory/Noiseless_DESIy1/covariances/cov_gaussian_prerec_Joint_nobgs_ell024.txt
+
+fs_matMfns: 
+# - mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Mmat_k0_0.32.txt
+
+fs_matWfns: 
+# - mock_data/DESI_bins/matrices/Wmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Wmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Wmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Wmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Wmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Wmat_k0_0.4.txt
+- mock_data/DESI_bins/matrices/Wmat_k0_0.32.txt

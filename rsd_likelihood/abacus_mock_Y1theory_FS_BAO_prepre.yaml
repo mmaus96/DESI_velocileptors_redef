@@ -1,0 +1,84 @@
+# zfid:     0.8
+zfids:
+- 0.30
+- 0.51
+- 0.71
+- 0.92
+- 0.96
+- 1.32
+- 1.49
+
+fs_sample_names:
+- BGS
+- LRG1
+- LRG2
+- LRG3
+- ELG1
+- ELG2
+- QSO
+
+
+# The file paths below assume the chain/code will be
+# running in the directory where the BOSSxPlanck repo
+# has been cloned.  Otherwise, override these with the
+# full path.
+
+# basedir: /pscratch/sd/m/mmaus/ShapeFit_DESI_Cutsky/mock_data/DESI_bins/
+
+fs_datfns: 
+- mock_data/DESI_bins/vel_theory/pk/pk_BGS_z0.3_rebin_ell024.txt
+- mock_data/DESI_bins/vel_theory/pk/pk_LRG1_z0.51_rebin_ell024.txt
+- mock_data/DESI_bins/vel_theory/pk/pk_LRG2_z0.71_rebin_ell024.txt
+- mock_data/DESI_bins/vel_theory/pk/pk_LRG3_z0.92_rebin_ell024.txt
+- mock_data/DESI_bins/vel_theory/pk/pk_ELG1_z0.96_rebin_ell024.txt
+- mock_data/DESI_bins/vel_theory/pk/pk_ELG2_z1.32_rebin_ell024.txt
+- mock_data/DESI_bins/vel_theory/pk/pk_QSO_z1.49_rebin_ell024.txt
+
+bao_sample_names:
+- BGS
+- LRG1
+- LRG2
+- LRG3
+- ELG1
+- ELG2
+- QSO
+
+bao_datfns: 
+- mock_data/DESI_bins/vel_theory/xi_pre/xi_pre_BGS_z0.3_ell02.txt
+- mock_data/DESI_bins/vel_theory/xi_pre/xi_pre_LRG1_z0.51_ell02.txt
+- mock_data/DESI_bins/vel_theory/xi_pre/xi_pre_LRG2_z0.71_ell02.txt
+- mock_data/DESI_bins/vel_theory/xi_pre/xi_pre_LRG3_z0.92_ell02.txt
+- mock_data/DESI_bins/vel_theory/xi_pre/xi_pre_ELG1_z0.96_ell02.txt
+- mock_data/DESI_bins/vel_theory/xi_pre/xi_pre_ELG2_z1.32_ell02.txt
+- mock_data/DESI_bins/vel_theory/xi_pre/xi_pre_QSO_z1.49_ell02.txt
+
+# covfn: mock_data/LRG/covariances/cov_cut.txt
+covfns: 
+- mock_data/DESI_bins/vel_theory/covariances/FSBAO_cov_BGS_EZmock_unresc_prepre.txt
+- mock_data/DESI_bins/vel_theory/covariances/FSBAO_cov_LRG1_EZmock_unresc_prepre.txt
+- mock_data/DESI_bins/vel_theory/covariances/FSBAO_cov_LRG2_EZmock_unresc_prepre.txt
+- mock_data/DESI_bins/vel_theory/covariances/FSBAO_cov_LRG3_EZmock_unresc_prepre.txt
+- mock_data/DESI_bins/vel_theory/covariances/FSBAO_cov_ELG1_EZmock_unresc_prepre.txt
+- mock_data/DESI_bins/vel_theory/covariances/FSBAO_cov_ELG2_EZmock_unresc_prepre.txt
+- mock_data/DESI_bins/vel_theory/covariances/FSBAO_cov_QSO_EZmock_unresc_prepre.txt
+
+fs_matMfns: 
+- mock_data/DESI_bins/vel_theory/matrices/wmat_BGS_z0.3_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_LRG1_z0.51_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_LRG2_z0.71_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_LRG3_z0.92_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_ELG1_z0.96_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_ELG2_z1.32_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_QSO_z1.49_rebin.txt
+
+fs_matWfns: 
+- mock_data/DESI_bins/vel_theory/matrices/wmat_BGS_z0.3_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_LRG1_z0.51_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_LRG2_z0.71_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_LRG3_z0.92_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_ELG1_z0.96_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_ELG2_z1.32_rebin.txt
+- mock_data/DESI_bins/vel_theory/matrices/wmat_QSO_z1.49_rebin.txt
+
+w_kin_fn: mock_data/DESI_bins/vel_theory/matrices/wmat_kin_BGS_z0.3_rebin.txt
+

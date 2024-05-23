@@ -1,0 +1,693 @@
+alpha0_BGS:
+  mean: 0.0
+  std: 12.5
+alpha2_BGS:
+  mean: 0.0
+  std: 12.5
+alpha4_BGS:
+  mean: 0.0
+  std: 50.0
+SN0_BGS:
+  mean: 0.0
+  std: 12205.4
+SN2_BGS:
+  mean: 0.0
+  std: 117062.45704928496
+SN4_BGS:
+  mean: 0.0
+  std: 2994001.310985998
+alpha0_LRG1:
+  mean: 0.0
+  std: 12.5
+alpha2_LRG1:
+  mean: 0.0
+  std: 12.5
+alpha4_LRG1:
+  mean: 0.0
+  std: 50.0
+SN0_LRG1:
+  mean: 0.0
+  std: 10837.4
+SN2_LRG1:
+  mean: 0.0
+  std: 155912.87528789564
+SN4_LRG1:
+  mean: 0.0
+  std: 5981465.340527901
+alpha0_LRG2:
+  mean: 0.0
+  std: 12.5
+alpha2_LRG2:
+  mean: 0.0
+  std: 12.5
+alpha4_LRG2:
+  mean: 0.0
+  std: 50.0
+SN0_LRG2:
+  mean: 0.0
+  std: 11178.6
+SN2_LRG2:
+  mean: 0.0
+  std: 160821.56861362228
+SN4_LRG2:
+  mean: 0.0
+  std: 6169783.200364036
+alpha0_LRG3:
+  mean: 0.0
+  std: 12.5
+alpha2_LRG3:
+  mean: 0.0
+  std: 12.5
+alpha4_LRG3:
+  mean: 0.0
+  std: 50.0
+SN0_LRG3:
+  mean: 0.0
+  std: 16738.4
+SN2_LRG3:
+  mean: 0.0
+  std: 240807.94948224782
+SN4_LRG3:
+  mean: 0.0
+  std: 9238392.922277689
+alpha0_ELG1:
+  mean: 0.0
+  std: 12.5
+alpha2_ELG1:
+  mean: 0.0
+  std: 12.5
+alpha4_ELG1:
+  mean: 0.0
+  std: 50.0
+SN0_ELG1:
+  mean: 0.0
+  std: 16255.8
+SN2_ELG1:
+  mean: 0.0
+  std: 39188.08928571429
+SN4_ELG1:
+  mean: 0.0
+  std: 377885.14668367355
+alpha0_ELG2:
+  mean: 0.0
+  std: 12.5
+alpha2_ELG2:
+  mean: 0.0
+  std: 12.5
+alpha4_ELG2:
+  mean: 0.0
+  std: 50.0
+SN0_ELG2:
+  mean: 0.0
+  std: 20920.8
+SN2_ELG2:
+  mean: 0.0
+  std: 50434.07142857144
+SN4_ELG2:
+  mean: 0.0
+  std: 486328.5459183675
+alpha0_QSO:
+  mean: 0.0
+  std: 12.5
+alpha2_QSO:
+  mean: 0.0
+  std: 12.5
+alpha4_QSO:
+  mean: 0.0
+  std: 50.0
+SN0_QSO:
+  mean: 0.0
+  std: 97200.4
+SN2_QSO:
+  mean: 0.0
+  std: 235284.6864723602
+SN4_QSO:
+  mean: 0.0
+  std: 7593779.955418131
+M0_BGS:
+  mean: 0.0
+  std: 10000.0
+Q0_BGS:
+  mean: 0.0
+  std: 10000.0
+H0_BGS:
+  mean: 0.0
+  std: 10000.0
+M1_BGS:
+  mean: 0.0
+  std: 10000.0
+Q1_BGS:
+  mean: 0.0
+  std: 10000.0
+H1_BGS:
+  mean: 0.0
+  std: 10000.0
+M2_BGS:
+  mean: 0.0
+  std: 10000.0
+Q2_BGS:
+  mean: 0.0
+  std: 10000.0
+H2_BGS:
+  mean: 0.0
+  std: 10000.0
+M3_BGS:
+  mean: 0.0
+  std: 10000.0
+Q3_BGS:
+  mean: 0.0
+  std: 10000.0
+H3_BGS:
+  mean: 0.0
+  std: 10000.0
+M4_BGS:
+  mean: 0.0
+  std: 10000.0
+Q4_BGS:
+  mean: 0.0
+  std: 10000.0
+H4_BGS:
+  mean: 0.0
+  std: 10000.0
+M5_BGS:
+  mean: 0.0
+  std: 10000.0
+Q5_BGS:
+  mean: 0.0
+  std: 10000.0
+H5_BGS:
+  mean: 0.0
+  std: 10000.0
+M6_BGS:
+  mean: 0.0
+  std: 10000.0
+Q6_BGS:
+  mean: 0.0
+  std: 10000.0
+H6_BGS:
+  mean: 0.0
+  std: 10000.0
+M7_BGS:
+  mean: 0.0
+  std: 10000.0
+Q7_BGS:
+  mean: 0.0
+  std: 10000.0
+H7_BGS:
+  mean: 0.0
+  std: 10000.0
+M8_BGS:
+  mean: 0.0
+  std: 10000.0
+Q8_BGS:
+  mean: 0.0
+  std: 10000.0
+H8_BGS:
+  mean: 0.0
+  std: 10000.0
+M0_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q0_LRG1:
+  mean: 0.0
+  std: 10000.0
+H0_LRG1:
+  mean: 0.0
+  std: 10000.0
+M1_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q1_LRG1:
+  mean: 0.0
+  std: 10000.0
+H1_LRG1:
+  mean: 0.0
+  std: 10000.0
+M2_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q2_LRG1:
+  mean: 0.0
+  std: 10000.0
+H2_LRG1:
+  mean: 0.0
+  std: 10000.0
+M3_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q3_LRG1:
+  mean: 0.0
+  std: 10000.0
+H3_LRG1:
+  mean: 0.0
+  std: 10000.0
+M4_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q4_LRG1:
+  mean: 0.0
+  std: 10000.0
+H4_LRG1:
+  mean: 0.0
+  std: 10000.0
+M5_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q5_LRG1:
+  mean: 0.0
+  std: 10000.0
+H5_LRG1:
+  mean: 0.0
+  std: 10000.0
+M6_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q6_LRG1:
+  mean: 0.0
+  std: 10000.0
+H6_LRG1:
+  mean: 0.0
+  std: 10000.0
+M7_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q7_LRG1:
+  mean: 0.0
+  std: 10000.0
+H7_LRG1:
+  mean: 0.0
+  std: 10000.0
+M8_LRG1:
+  mean: 0.0
+  std: 10000.0
+Q8_LRG1:
+  mean: 0.0
+  std: 10000.0
+H8_LRG1:
+  mean: 0.0
+  std: 10000.0
+M0_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q0_LRG2:
+  mean: 0.0
+  std: 10000.0
+H0_LRG2:
+  mean: 0.0
+  std: 10000.0
+M1_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q1_LRG2:
+  mean: 0.0
+  std: 10000.0
+H1_LRG2:
+  mean: 0.0
+  std: 10000.0
+M2_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q2_LRG2:
+  mean: 0.0
+  std: 10000.0
+H2_LRG2:
+  mean: 0.0
+  std: 10000.0
+M3_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q3_LRG2:
+  mean: 0.0
+  std: 10000.0
+H3_LRG2:
+  mean: 0.0
+  std: 10000.0
+M4_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q4_LRG2:
+  mean: 0.0
+  std: 10000.0
+H4_LRG2:
+  mean: 0.0
+  std: 10000.0
+M5_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q5_LRG2:
+  mean: 0.0
+  std: 10000.0
+H5_LRG2:
+  mean: 0.0
+  std: 10000.0
+M6_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q6_LRG2:
+  mean: 0.0
+  std: 10000.0
+H6_LRG2:
+  mean: 0.0
+  std: 10000.0
+M7_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q7_LRG2:
+  mean: 0.0
+  std: 10000.0
+H7_LRG2:
+  mean: 0.0
+  std: 10000.0
+M8_LRG2:
+  mean: 0.0
+  std: 10000.0
+Q8_LRG2:
+  mean: 0.0
+  std: 10000.0
+H8_LRG2:
+  mean: 0.0
+  std: 10000.0
+M0_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q0_LRG3:
+  mean: 0.0
+  std: 10000.0
+H0_LRG3:
+  mean: 0.0
+  std: 10000.0
+M1_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q1_LRG3:
+  mean: 0.0
+  std: 10000.0
+H1_LRG3:
+  mean: 0.0
+  std: 10000.0
+M2_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q2_LRG3:
+  mean: 0.0
+  std: 10000.0
+H2_LRG3:
+  mean: 0.0
+  std: 10000.0
+M3_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q3_LRG3:
+  mean: 0.0
+  std: 10000.0
+H3_LRG3:
+  mean: 0.0
+  std: 10000.0
+M4_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q4_LRG3:
+  mean: 0.0
+  std: 10000.0
+H4_LRG3:
+  mean: 0.0
+  std: 10000.0
+M5_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q5_LRG3:
+  mean: 0.0
+  std: 10000.0
+H5_LRG3:
+  mean: 0.0
+  std: 10000.0
+M6_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q6_LRG3:
+  mean: 0.0
+  std: 10000.0
+H6_LRG3:
+  mean: 0.0
+  std: 10000.0
+M7_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q7_LRG3:
+  mean: 0.0
+  std: 10000.0
+H7_LRG3:
+  mean: 0.0
+  std: 10000.0
+M8_LRG3:
+  mean: 0.0
+  std: 10000.0
+Q8_LRG3:
+  mean: 0.0
+  std: 10000.0
+H8_LRG3:
+  mean: 0.0
+  std: 10000.0
+M0_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q0_ELG1:
+  mean: 0.0
+  std: 10000.0
+H0_ELG1:
+  mean: 0.0
+  std: 10000.0
+M1_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q1_ELG1:
+  mean: 0.0
+  std: 10000.0
+H1_ELG1:
+  mean: 0.0
+  std: 10000.0
+M2_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q2_ELG1:
+  mean: 0.0
+  std: 10000.0
+H2_ELG1:
+  mean: 0.0
+  std: 10000.0
+M3_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q3_ELG1:
+  mean: 0.0
+  std: 10000.0
+H3_ELG1:
+  mean: 0.0
+  std: 10000.0
+M4_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q4_ELG1:
+  mean: 0.0
+  std: 10000.0
+H4_ELG1:
+  mean: 0.0
+  std: 10000.0
+M5_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q5_ELG1:
+  mean: 0.0
+  std: 10000.0
+H5_ELG1:
+  mean: 0.0
+  std: 10000.0
+M6_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q6_ELG1:
+  mean: 0.0
+  std: 10000.0
+H6_ELG1:
+  mean: 0.0
+  std: 10000.0
+M7_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q7_ELG1:
+  mean: 0.0
+  std: 10000.0
+H7_ELG1:
+  mean: 0.0
+  std: 10000.0
+M8_ELG1:
+  mean: 0.0
+  std: 10000.0
+Q8_ELG1:
+  mean: 0.0
+  std: 10000.0
+H8_ELG1:
+  mean: 0.0
+  std: 10000.0
+M0_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q0_ELG2:
+  mean: 0.0
+  std: 10000.0
+H0_ELG2:
+  mean: 0.0
+  std: 10000.0
+M1_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q1_ELG2:
+  mean: 0.0
+  std: 10000.0
+H1_ELG2:
+  mean: 0.0
+  std: 10000.0
+M2_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q2_ELG2:
+  mean: 0.0
+  std: 10000.0
+H2_ELG2:
+  mean: 0.0
+  std: 10000.0
+M3_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q3_ELG2:
+  mean: 0.0
+  std: 10000.0
+H3_ELG2:
+  mean: 0.0
+  std: 10000.0
+M4_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q4_ELG2:
+  mean: 0.0
+  std: 10000.0
+H4_ELG2:
+  mean: 0.0
+  std: 10000.0
+M5_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q5_ELG2:
+  mean: 0.0
+  std: 10000.0
+H5_ELG2:
+  mean: 0.0
+  std: 10000.0
+M6_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q6_ELG2:
+  mean: 0.0
+  std: 10000.0
+H6_ELG2:
+  mean: 0.0
+  std: 10000.0
+M7_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q7_ELG2:
+  mean: 0.0
+  std: 10000.0
+H7_ELG2:
+  mean: 0.0
+  std: 10000.0
+M8_ELG2:
+  mean: 0.0
+  std: 10000.0
+Q8_ELG2:
+  mean: 0.0
+  std: 10000.0
+H8_ELG2:
+  mean: 0.0
+  std: 10000.0
+M0_QSO:
+  mean: 0.0
+  std: 10000.0
+Q0_QSO:
+  mean: 0.0
+  std: 10000.0
+H0_QSO:
+  mean: 0.0
+  std: 10000.0
+M1_QSO:
+  mean: 0.0
+  std: 10000.0
+Q1_QSO:
+  mean: 0.0
+  std: 10000.0
+H1_QSO:
+  mean: 0.0
+  std: 10000.0
+M2_QSO:
+  mean: 0.0
+  std: 10000.0
+Q2_QSO:
+  mean: 0.0
+  std: 10000.0
+H2_QSO:
+  mean: 0.0
+  std: 10000.0
+M3_QSO:
+  mean: 0.0
+  std: 10000.0
+Q3_QSO:
+  mean: 0.0
+  std: 10000.0
+H3_QSO:
+  mean: 0.0
+  std: 10000.0
+M4_QSO:
+  mean: 0.0
+  std: 10000.0
+Q4_QSO:
+  mean: 0.0
+  std: 10000.0
+H4_QSO:
+  mean: 0.0
+  std: 10000.0
+M5_QSO:
+  mean: 0.0
+  std: 10000.0
+Q5_QSO:
+  mean: 0.0
+  std: 10000.0
+H5_QSO:
+  mean: 0.0
+  std: 10000.0
+M6_QSO:
+  mean: 0.0
+  std: 10000.0
+Q6_QSO:
+  mean: 0.0
+  std: 10000.0
+H6_QSO:
+  mean: 0.0
+  std: 10000.0
+M7_QSO:
+  mean: 0.0
+  std: 10000.0
+Q7_QSO:
+  mean: 0.0
+  std: 10000.0
+H7_QSO:
+  mean: 0.0
+  std: 10000.0
+M8_QSO:
+  mean: 0.0
+  std: 10000.0
+Q8_QSO:
+  mean: 0.0
+  std: 10000.0
+H8_QSO:
+  mean: 0.0
+  std: 10000.0

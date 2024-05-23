@@ -1,0 +1,33 @@
+zfid:     0.8
+
+zfids:
+- 0.8
+
+fs_sample_names:
+- LRG
+
+# The file paths below assume the chain/code will be
+# running in the directory where the BOSSxPlanck repo
+# has been cloned.  Otherwise, override these with the
+# full path.
+
+# basedir: /global/cscratch1/sd/mmaus/new_template/Cobaya_template/
+
+fs_datfns: 
+- mock_data/LRG/pk/z0.800/lrg_cubic_dk0.005_pells.txt
+
+# covfn: mock_data/LRG/covariances/cov_cut.txt
+# covfn: mock_data/LRG/covariances/lrg_cubic_dk0.005_cov_mean_hex.txt
+covfn: mock_data/LRG/covariances/lrg_cubic_dk0.005_cov_V1_hex.txt
+
+fs_matMfns: 
+- mock_data/LRG/matrices/Wmat_pypower_new.txt
+
+pypower_kin_fn:
+- mock_data/LRG/matrices/kin_pypower_new.txt
+
+pypower_kout_fn:
+- mock_data/LRG/matrices/kout_pypower_new.txt
+
+fs_matWfns: 
+- mock_data/LRG/matrices/Wmat.txt

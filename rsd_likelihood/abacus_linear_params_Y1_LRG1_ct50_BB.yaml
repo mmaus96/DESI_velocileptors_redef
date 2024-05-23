@@ -1,0 +1,99 @@
+alpha0_LRG1:
+  mean: 0.0
+  std: 12.5
+alpha2_LRG1:
+  mean: 0.0
+  std: 12.5
+alpha4_LRG1:
+  mean: 0.0
+  std: 50.0
+SN0_LRG1:
+  mean: 0.0
+  std: 10837.4
+SN2_LRG1:
+  mean: 0.0
+  std: 155912.87528789564
+SN4_LRG1:
+  mean: 0.0
+  std: 5981465.340527901
+M0_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q0_LRG1:
+  mean: 0.0
+  std: 20000.0
+H0_LRG1:
+  mean: 0.0
+  std: 1000.0
+M1_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q1_LRG1:
+  mean: 0.0
+  std: 20000.0
+H1_LRG1:
+  mean: 0.0
+  std: 1000.0
+M2_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q2_LRG1:
+  mean: 0.0
+  std: 20000.0
+H2_LRG1:
+  mean: 0.0
+  std: 1000.0
+M3_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q3_LRG1:
+  mean: 0.0
+  std: 20000.0
+H3_LRG1:
+  mean: 0.0
+  std: 1000.0
+M4_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q4_LRG1:
+  mean: 0.0
+  std: 20000.0
+H4_LRG1:
+  mean: 0.0
+  std: 1000.0
+M5_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q5_LRG1:
+  mean: 0.0
+  std: 20000.0
+H5_LRG1:
+  mean: 0.0
+  std: 1000.0
+M6_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q6_LRG1:
+  mean: 0.0
+  std: 20000.0
+H6_LRG1:
+  mean: 0.0
+  std: 1000.0
+M7_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q7_LRG1:
+  mean: 0.0
+  std: 20000.0
+H7_LRG1:
+  mean: 0.0
+  std: 1000.0
+M8_LRG1:
+  mean: 0.0
+  std: 50000.0
+Q8_LRG1:
+  mean: 0.0
+  std: 20000.0
+H8_LRG1:
+  mean: 0.0
+  std: 1000.0

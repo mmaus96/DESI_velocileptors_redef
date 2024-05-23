@@ -1,0 +1,32 @@
+# LRG3
+alpha0_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5
+  
+alpha2_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5
+  
+alpha4_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5
+
+SN0_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2000.
+  
+SN2_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.0e+4
+
+SN4_LRG3:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 1.0e+6
+  
+

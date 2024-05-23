@@ -1,0 +1,32 @@
+# QSO
+alpha0_QSO:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+  
+alpha2_QSO:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+  
+alpha4_QSO:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 5.
+
+SN0_QSO:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2.5e+2
+  
+SN2_QSO:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2.5e+6
+
+SN4_QSO:
+  mean:   0.0
+  # std: 1.0e+10
+  std: 2.5e+10
+  
+
