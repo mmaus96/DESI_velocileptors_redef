@@ -1,0 +1,316 @@
+theory:
+  FM_likelihoods.pk_likelihood_cubic_direct_w0wacdm_redefined.Taylor_pk_theory_zs:
+      zfids:
+      - 0.8
+      - 1.1
+      - 1.4
+      
+      # basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/emulator/FM/wCDM/emu/
+      # s8_filenames: 
+      # - abacus_s8_wcdm_z0.80.json
+      # pk_filenames:
+      # - abacus_z_0.80_pkells.json
+      omega_nu: 0.0006442
+      stop_at_error: True
+      
+likelihood:
+  pk_abacus_likelihoods_emu_fs_am_wcdm_direct.abacus_mock_joint_hex:
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/
+    linear_param_dict_fn: rsd_likelihood/abacus_linear_params_joint_hex_redefined_ct_20.yaml
+    # linear_param_dict_fn: rsd_likelihood/abacus_linear_params_Y1_LRG1_redefined_ct_20.yaml
+    fs_kmins:
+    - 0.02
+    - 0.02
+    - 0.02
+    fs_mmaxs:
+    - 0.20
+    - 0.20
+    - 0.20
+    fs_qmaxs:
+    - 0.20
+    - 0.20
+    - 0.20
+    fs_hmaxs:
+    - 0.20
+    - 0.20
+    - 0.20
+    # - 0.0
+    
+    # ideal: True
+    # kmax_spline:
+    # - 0.5
+    include_priors: True
+    optimize: False
+    stop_at_error: True
+    cov_fac: 25.0
+    hexa: True
+    jeff: False
+    ext_prior: False
+    
+    
+params:
+  w0: 
+    # value: -1.0
+    prior:
+      min: -2.0
+      max: -0.5
+      # min: -2.0
+      # max: 1.0
+    ref:
+      dist: norm
+      loc:  -1.0
+      scale: 0.05
+    latex: w_0
+  wa: 
+    # value: -1.0
+    prior:
+      min: -1.0
+      max: 1.0
+      # min: -2.0
+      # max: 1.0
+    ref:
+      dist: norm
+      loc:  0.0
+      scale: 0.05
+    latex: w_a
+  w_sum:
+    derived: 'lambda w0,wa: w0 + wa'
+    max: -0.1
+    min: -10.0
+  H0:
+    # value: 67.36
+    prior:
+      # min: 60.0
+      # max: 80.0
+      min: 55.0
+      max: 79.0
+    ref:
+      dist: norm
+      loc:  69.848
+      scale: 1.0
+    latex: H_0
+  omega_b:
+    # value: 0.02237
+    prior:
+      dist:  norm
+      loc: 0.02237
+      scale: 0.00037
+      # min: 0.022
+      # max: 0.02274
+    ref:
+      dist: norm
+      loc: 0.02237
+      scale: 0.0001
+    latex: \Omega_\mathrm{b}h^2
+  omega_cdm:
+    # value: 0.12
+    prior:
+      min: 0.08
+      max: 0.16
+      # min: 0.05
+      # max: 0.2
+    ref:
+      dist: norm
+      loc: 0.1
+      scale: 0.05
+    latex: \Omega_\mathrm{cdm}h^2
+  logA:
+    # value: 3.0363942552728806
+    prior:
+      dist: uniform
+      min:  2.03
+      max:  4.03
+      # min:  1.61
+      # max:  3.91
+    ref:
+      dist:  norm
+      loc:   2.7954
+      scale: 0.05
+    latex: \log(10^{10} A_\mathrm{s})
+  sigma8:
+    latex: \sigma_8
+  omegam:
+    latex: \Omega_\mathrm{m}
+    
+  # LRG
+  bsig8_LRG:
+    prior:
+      dist: uniform
+      min:  0.5
+      max:  3.0
+    ref:
+      dist:  norm
+      loc:   1.7239232
+      scale: 0.05
+    latex: (1+b_1^{LRG})\sigma_8
+  b2sig8_LRG:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{LRG}
+  bssig8_LRG:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{LRG}
+  b3sig8_LRG:
+    # value: 0.0
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{LRG}
+    
+  # ELG
+  bsig8_ELG:
+    prior:
+      dist: uniform
+      min:  0.5
+      max:  3.0
+    ref:
+      dist:  norm
+      loc:   1.7239232
+      scale: 0.05
+    latex: (1+b_1^{ELG})\sigma_8
+  b2sig8_ELG:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{ELG}
+  bssig8_ELG:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{ELG}
+  b3sig8_ELG:
+    # value: 0.0
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{ELG}
+    
+  # QSO
+  bsig8_QSO:
+    prior:
+      dist: uniform
+      min:  0.5
+      max:  3.0
+    ref:
+      dist:  norm
+      loc:   1.7239232
+      scale: 0.05
+    latex: (1+b_1^{QSO})\sigma_8
+  b2sig8_QSO:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{QSO}
+  bssig8_QSO:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{QSO}
+  b3sig8_QSO:
+    # value: 0.0
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{QSO}
+    
+
+
+sampler:
+  mcmc:
+    covmat: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/chains/FM/Joint/V1/ell02/pk.covmat
+#    covmat: /global/cscratch1/sd/sfschen/boss_analysis_joint/covini/bossz3_pk.covini
+    learn_proposal: True
+    learn_proposal_Rminus1_max: 0.1
+    learn_proposal_Rminus1_max_early: 30.0
+    output_every: 60s
+    measure_speeds: False
+    max_tries: 500
+    drag: False
+    oversample_power: 0.4
+    proposal_scale: 1.5
+    Rminus1_stop: 0.01
+    blocking:
+      - [ 1, [w0,wa,logA,omega_b,omega_cdm,H0]]
+      # - [ 1, [logA,omega_b,omega_cdm,H0]]
+      - [ 2, [bsig8_LRG,b2sig8_LRG,bssig8_LRG,b3sig8_LRG,bsig8_ELG,b2sig8_ELG,bssig8_ELG,b3sig8_ELG,bsig8_QSO,b2sig8_QSO,bssig8_QSO,b3sig8_QSO]]
+      # - [ 2, [bsig8_LRG1,b2sig8_LRG1,bssig8_LRG1]]
+output: chains/FM/Joint/V1/ell024/w0waCDM/maxF/V25/pk
+debug: True
+debug_file: chains/FM/Joint/V1/ell024/w0waCDM/maxF/V25/pk
+timing: True
+stop_on_error: True

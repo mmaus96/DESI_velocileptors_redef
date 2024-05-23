@@ -1,0 +1,136 @@
+theory:
+  FM_likelihoods.pk_likelihood_gc_emu_fs_am_wcdm_redefined.Taylor_pk_theory_zs:
+    zfids:
+    - 1.4
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/emulator/FM/wCDM/emu/
+    s8_filenames:
+    - abacus_s8_wcdm_z1.40.json
+    pk_filenames:
+    - abacus_z_1.40_pkells.json
+    omega_nu: 0.0006442
+    stop_at_error: true
+likelihood:
+  pk_boss_likelihoods_emu_fs_am_wcdm_redefined.abacus_mock_QSO_hex:
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/
+    linear_param_dict_fn: rsd_likelihood/abacus_linear_params_QSO_redefined_ct_50.yaml
+    fs_kmins:
+    - 0.02
+    fs_mmaxs:
+    - 0.16
+    fs_qmaxs:
+    - 0.16
+    fs_hmaxs:
+    - 0.0
+    kmax_spline:
+    - 0.5
+    include_priors: true
+    optimize: false
+    stop_at_error: true
+    cov_fac: 1.0
+    hexa: false
+    jeff: false
+params:
+  w:
+    value: -1.0
+    latex: w
+  H0:
+    prior:
+      min: 55.0
+      max: 79.0
+    ref:
+      dist: norm
+      loc: 69.848
+      scale: 1.0
+    latex: H_0
+  omega_b:
+    prior:
+      dist: norm
+      loc: 0.02237
+      scale: 0.00037
+    ref:
+      dist: norm
+      loc: 0.02237
+      scale: 0.0001
+    latex: \Omega_\mathrm{b}h^2
+  omega_cdm:
+    prior:
+      min: 0.08
+      max: 0.16
+    ref:
+      dist: norm
+      loc: 0.1
+      scale: 0.05
+    latex: \Omega_\mathrm{cdm}h^2
+  logA:
+    prior:
+      dist: uniform
+      min: 2.03
+      max: 4.03
+    ref:
+      dist: norm
+      loc: 2.7954
+      scale: 0.05
+    latex: \log(10^{10} A_\mathrm{s})
+  sigma8:
+    latex: \sigma_8
+  omegam:
+    latex: \Omega_\mathrm{m}
+  bsig8_QSO:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{N3})\sigma_8
+  b2sig8_QSO:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{QSO}
+  bssig8_QSO:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{QSO}
+  b3sig8_QSO:
+    value: 0.0
+sampler:
+  mcmc:
+    covmat: auto
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 30.0
+    output_every: 60s
+    measure_speeds: false
+    max_tries: 500
+    drag: false
+    oversample_power: 0.4
+    proposal_scale: 1.5
+    Rminus1_stop: 0.01
+    blocking:
+    - - 1
+      - - logA
+        - omega_b
+        - omega_cdm
+        - H0
+    - - 2
+      - - bsig8_QSO
+        - b2sig8_QSO
+        - bssig8_QSO
+output: chains/FM/QSO/LCDM/kmax_dep/kmax_0p16/ct_50/pk
+debug: true
+debug_file: chains/FM/QSO/LCDM/kmax_dep/kmax_0p16/ct_50/pk
+timing: true
+stop_on_error: true

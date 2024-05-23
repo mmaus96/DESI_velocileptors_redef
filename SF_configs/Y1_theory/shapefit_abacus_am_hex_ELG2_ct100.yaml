@@ -1,0 +1,151 @@
+theory:
+  SF_likelihoods.pk_likelihood_shapefit_Y1theory_am.Taylor_pk_theory_zs:
+      zfids:
+      - 1.35
+      # basedir: /global/cscratch1/sd/mmaus/new_template/Cobaya_template/emulator/full_shape/abacus_fid_ini/emu/
+      basedir: /pscratch/sd/m/mmaus/ShapeFit_DESI_Cutsky/emulator/shapefit/abacus_fid/emu/
+      # s8_filename: boss_s8.json
+      pk_filenames:
+      - boss_z_1.35_pkells.json
+      stop_at_error: True
+      order: 3
+      
+likelihood:
+  shapefit_abacus_Y1theory_likelihoods.abacus_theory_ELG2_hex:
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/
+    linear_param_dict_fn: rsd_likelihood/abacus_linear_params_Y1_ELG2_hex_redefined_ct_100.yaml
+    fs_kmins:
+    - 0.02
+    fs_mmaxs:
+    - 0.2
+    fs_qmaxs:
+    - 0.2
+    fs_hmaxs:
+    - 0.2
+    sig8: 0.8076
+    # ideal: True
+    kmax_spline:
+    - 0.4
+    include_priors: True
+    optimize: False
+    stop_at_error: True
+    cov_fac: 1.0
+    hexa: True
+    jeff: False
+    
+params:
+  f_sig8:
+    prior:
+      min: 0.0
+      max: 2.0
+    ref:
+      dist: norm
+      loc:  0.466
+      scale: 0.05
+    latex: f\sigma_8
+  apar:
+    prior:
+      min: 0.5
+      max: 1.5
+    ref:
+      dist: norm
+      loc: 1.0
+      scale: 0.03
+    latex: \alpha_{\parallel}
+  aperp:
+    prior:
+      min: 0.5
+      max: 1.5
+    ref:
+      dist: norm
+      loc: 1.0
+      scale: 0.03
+    latex: \alpha_{\perp}
+  m:
+    # value: -0.01
+    prior:
+      min: -3.0
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.05
+    latex: m
+    
+  # ELG2
+  bsig8_ELG2:
+    prior:
+      dist: uniform
+      min:  0.5
+      max:  3.0
+    ref:
+      dist:  norm
+      loc:   1.7239232
+      scale: 0.05
+    latex: (1+b_1^{ELG2})\sigma_8
+  b2sig8_ELG2:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{ELG2}
+  bssig8_ELG2:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{ELG2}
+  b3sig8_ELG2:
+    # value: 0.0
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{ELG2}
+
+
+
+sampler:
+  mcmc:
+    covmat: auto
+#    covmat: /global/cscratch1/sd/sfschen/boss_analysis_joint/covini/bossz3_pk.covini
+    learn_proposal: True
+    learn_proposal_Rminus1_max: 30.0
+    output_every: 60s
+    measure_speeds: false
+    max_tries: 500
+    drag: False
+    oversample_power: 0.4
+    proposal_scale: 1.5
+    Rminus1_stop: 0.01
+    blocking:
+      - [ 1, [f_sig8,apar,aperp,m]]
+      # - [ 2, [bsig8_ELG2,b2_ELG2,bs_ELG2,b3_ELG2]]
+      - [ 2, [bsig8_ELG2,b2sig8_ELG2,bssig8_ELG2,b3sig8_ELG2]]
+      # - [ 2, [bsig8_ELG2,b2_ELG2]]
+output: chains/SF/Y1_theory/maxF/ct_100/ELG2/pk
+debug: True
+debug_file: chains/SF/Y1_theory/maxF/ct_100/ELG2/pk
+timing: True
+stop_on_error: True

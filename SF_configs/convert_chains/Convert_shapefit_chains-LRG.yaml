@@ -1,0 +1,82 @@
+theory:
+  convert_shapefit_2_wCDM_joint.Compute_theory_pars:
+    zfids:
+    - 0.8
+    shapefit: true
+    stop_at_error: false
+likelihood:
+  convert_shapefit_2_wCDM_joint.shapefit_2_wCDM:
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/chains/SF/LRG/LCDM/V1/ell02/kmax0p20/
+    zfids:
+    - 0.8
+    shapefit: true
+    unpack_chains: true
+    chains_fn:
+    - ct_50/pk
+    ext_prior: false
+    prior_cov_fn: none
+    prior_means: None
+    stop_at_error: false
+params:
+  w:
+    value: -1.0
+    latex: w
+  H0:
+    prior:
+      min: 55.0
+      max: 79.0
+    ref:
+      dist: norm
+      loc: 69.848
+      scale: 1.0
+    latex: H_0
+  omega_b:
+    prior:
+      dist: norm
+      loc: 0.02237
+      scale: 0.00037
+    ref:
+      dist: norm
+      loc: 0.02237
+      scale: 0.0001
+    latex: \Omega_\mathrm{b}h^2
+  omega_cdm:
+    prior:
+      min: 0.08
+      max: 0.16
+    ref:
+      dist: norm
+      loc: 0.1
+      scale: 0.05
+    latex: \Omega_\mathrm{cdm}h^2
+  logA:
+    prior:
+      dist: uniform
+      min: 2.03
+      max: 4.03
+    ref:
+      dist: norm
+      loc: 2.7954
+      scale: 0.05
+    latex: \log(10^{10} A_\mathrm{s})
+  sigma8:
+    latex: \sigma_8
+  omegam:
+    latex: \Omega_\mathrm{m}
+sampler:
+  mcmc:
+    covmat: auto
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 30.0
+    output_every: 60s
+    measure_speeds: true
+    max_tries: 500
+    drag: false
+    oversample_power: 0.4
+    proposal_scale: 1.5
+    Rminus1_stop: 0.01
+output: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/chains/SF/LRG/LCDM/V1/ell02/kmax0p20/ct_50/convert_LCDM/lcdm
+debug: true
+debug_file: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/chains/SF/LRG/LCDM/V1/ell02/kmax0p20/ct_50/convert_LCDM/lcdm
+timing: true
+stop_on_error: false

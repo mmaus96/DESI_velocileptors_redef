@@ -1,0 +1,126 @@
+theory:
+  SF_likelihoods.pk_likelihood_shapefit_cubic_am.Taylor_pk_theory_zs:
+    zfids:
+    - 1.1
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/emulator/SF/emu/
+    pk_filenames:
+    - abacus_z_1.10_pkells.json
+    order: 3
+    stop_at_error: true
+likelihood:
+  shapefit_abacus_cubic_likelihoods.abacus_mock_ELG_hex:
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/
+    linear_param_dict_fn: rsd_likelihood/abacus_linear_params_ELG_redefined_ct_50.yaml
+    fs_kmins:
+    - 0.02
+    fs_mmaxs:
+    - 0.2
+    fs_qmaxs:
+    - 0.2
+    fs_hmaxs:
+    - 0.0
+    include_priors: true
+    optimize: false
+    stop_at_error: true
+    cov_fac: 1.0
+    hexa: false
+    jeff: false
+params:
+  f_sig8:
+    prior:
+      min: 0.0
+      max: 2.0
+    ref:
+      dist: norm
+      loc: 0.466
+      scale: 0.05
+    latex: f\sigma_8
+  apar:
+    prior:
+      min: 0.5
+      max: 1.5
+    ref:
+      dist: norm
+      loc: 1.0
+      scale: 0.03
+    latex: \alpha_{\parallel}
+  aperp:
+    prior:
+      min: 0.5
+      max: 1.5
+    ref:
+      dist: norm
+      loc: 1.0
+      scale: 0.03
+    latex: \alpha_{\perp}
+  m:
+    prior:
+      min: -3.0
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.05
+    latex: m
+  fsig_s8:
+    latex: f\sigma_{s8}
+  bsig8_ELG:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{ELG})\sigma_8
+  b2sig8_ELG:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{ELG}
+  bssig8_ELG:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{ELG}
+  b3sig8_ELG:
+    value: 0.0
+    latex: b_3\sigma_8^{ELG}
+sampler:
+  mcmc:
+    covmat: auto
+    learn_proposal: true
+    learn_proposal_Rminus1_max: 30.0
+    output_every: 60s
+    measure_speeds: false
+    max_tries: 500
+    drag: false
+    oversample_power: 0.4
+    proposal_scale: 1.5
+    Rminus1_stop: 0.01
+    blocking:
+    - - 1
+      - - f_sig8
+        - apar
+        - aperp
+        - m
+    - - 2
+      - - bsig8_ELG
+        - b2sig8_ELG
+        - bssig8_ELG
+output: chains/SF/ELG/LCDM/kmax_dep/kmax_0p20/ct_50/pk
+debug: true
+debug_file: chains/SF/ELG/LCDM/kmax_dep/kmax_0p20/ct_50/pk
+timing: true
+stop_on_error: true

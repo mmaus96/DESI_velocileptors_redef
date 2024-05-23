@@ -1,0 +1,676 @@
+theory:
+  FM_likelihoods.joint_likelihood_gc_emu_am_w0wacdm_BBspline_redef_multibin_Y1theory.Taylor_pk_theory_zs:
+    bao_sample_names:
+    - BGS
+    - LRG1
+    - LRG2
+    - LRG3
+    - ELG1
+    - ELG2
+    - QSO
+    zfids:
+    - 0.3
+    - 0.51
+    - 0.71
+    - 0.92
+    - 0.96
+    - 1.32
+    - 1.49
+    Rsmooth:
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 15
+    - 30
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/emulator/FM/w0waCDM/emu/
+    pk_filenames:
+    - abacus_z_0.30_pkells.json
+    - abacus_z_0.51_pkells.json
+    - abacus_z_0.71_pkells.json
+    - abacus_z_0.92_pkells.json
+    - abacus_z_0.96_pkells.json
+    - abacus_z_1.32_pkells.json
+    - abacus_z_1.49_pkells.json
+    omega_nu: 0.0006442
+    stop_at_error: true
+likelihood:
+  pk_Y1theory_likelihoods_emu_fs_am_w0wacdm.abacus_mock_Y1theory_FS_BAO:
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/
+    linear_param_dict_fn: rsd_likelihood/abacus_linear_params_Y1_prepost_hex_ct50_desilike.yaml
+    fs_kmins:
+    - 0.02
+    - 0.02
+    - 0.02
+    - 0.02
+    - 0.02
+    - 0.02
+    - 0.02
+    fs_mmaxs:
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    fs_qmaxs:
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    - 0.2
+    fs_hmaxs:
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    bao_rmins:
+    - 80.0
+    - 80.0
+    - 80.0
+    - 80.0
+    - 80.0
+    - 80.0
+    - 80.0
+    bao_rmaxs:
+    - 130.0
+    - 130.0
+    - 130.0
+    - 130.0
+    - 130.0
+    - 130.0
+    - 130.0
+    kmax_spline:
+    - 0.4
+    - 0.4
+    - 0.4
+    - 0.4
+    - 0.4
+    - 0.4
+    - 0.4
+    include_priors: True
+    optimize: False
+    stop_at_error: true
+    cov_fac: 1.0
+    inv_cov_fac: 0.858
+    npoly: 2
+    hexa: False
+params:
+  w0: 
+    # value: -1.0
+    prior:
+      min: -2.0
+      max: -0.5
+      # min: -2.0
+      # max: 1.0
+    ref:
+      dist: norm
+      loc:  -3.0
+      scale: 0.5
+    latex: w_0
+  wa: 
+    # value: -1.0
+    prior:
+      min: -2.0
+      max: 0.5
+      # min: -2.0
+      # max: 1.0
+    ref:
+      dist: norm
+      loc:  0.0
+      scale: 0.05
+    latex: w_a
+  H0:
+    prior:
+      min: 55.0
+      max: 79.0
+    ref:
+      dist: norm
+      loc: 67.36
+      scale: 1.0
+    latex: H_0
+  omega_b:
+    prior:
+      dist: norm
+      loc: 0.02237
+      scale: 0.00037
+    ref:
+      dist: norm
+      loc: 0.02237
+      scale: 0.0001
+    latex: \Omega_\mathrm{b}h^2
+  omega_cdm:
+    prior:
+      min: 0.08
+      max: 0.16
+    ref:
+      dist: norm
+      loc: 0.12
+      scale: 0.01
+    latex: \Omega_\mathrm{cdm}h^2
+  logA:
+    prior:
+      dist: uniform
+      min: 2.03
+      max: 4.03
+    ref:
+      dist: norm
+      loc: 3.036
+      scale: 0.01
+    latex: \log(10^{10} A_\mathrm{s})
+  sigma8:
+    latex: \sigma_8
+  omegam:
+    latex: \Omega_\mathrm{m}
+  bsig8_BGS:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{BGS})\sigma_8
+  b2sig8_BGS:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{BGS}
+  bssig8_BGS:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{BGS}
+  b3sig8_BGS:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{BGS}
+  bsig8_LRG1:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{LRG1})\sigma_8
+  b2sig8_LRG1:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{LRG1}
+  bssig8_LRG1:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{LRG1}
+  b3sig8_LRG1:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{LRG1}
+  bsig8_LRG2:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{LRG2})\sigma_8
+  b2sig8_LRG2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{LRG2}
+  bssig8_LRG2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{LRG2}
+  b3sig8_LRG2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{LRG2}
+  bsig8_LRG3:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{LRG3})\sigma_8
+  b2sig8_LRG3:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{LRG3}
+  bssig8_LRG3:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{LRG3}
+  b3sig8_LRG3:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{LRG3}
+  bsig8_ELG1:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{ELG1})\sigma_8
+  b2sig8_ELG1:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{ELG1}
+  bssig8_ELG1:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{ELG1}
+  b3sig8_ELG1:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{ELG1}
+  bsig8_ELG2:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{ELG2})\sigma_8
+  b2sig8_ELG2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{ELG2}
+  bssig8_ELG2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{ELG2}
+  b3sig8_ELG2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{ELG2}
+  bsig8_QSO:
+    prior:
+      dist: uniform
+      min: 0.5
+      max: 3.0
+    ref:
+      dist: norm
+      loc: 1.7239232
+      scale: 0.05
+    latex: (1+b_1^{QSO})\sigma_8
+  b2sig8_QSO:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{QSO}
+  bssig8_QSO:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{QSO}
+  b3sig8_QSO:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 5.0
+    ref:
+      dist: norm
+      loc: 1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{QSO}
+  B1_BGS:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 1.12
+      scale: 0.1
+    latex: B_1^{BGS}
+  F_BGS:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.63
+      scale: 0.1
+    latex: F^{BGS}
+  Sigpar_BGS:
+    value: 0.0
+    latex: \Sigma_{\parallel}^{BGS}
+  Sigperp_BGS:
+    value: 0.0
+    latex: \Sigma_{\perp}^{BGS}
+  Sigs_BGS:
+    value: 0.0
+    latex: \Sigma_{s}^{BGS}
+  B1_LRG1:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 1.12
+      scale: 0.1
+    latex: B_1^{LRG1}
+  F_LRG1:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.63
+      scale: 0.1
+    latex: F^{LRG1}
+  Sigpar_LRG1:
+    value: 0.0
+    latex: \Sigma_{\parallel}^{LRG1}
+  Sigperp_LRG1:
+    value: 0.0
+    latex: \Sigma_{\perp}^{LRG1}
+  Sigs_LRG1:
+    value: 0.0
+    latex: \Sigma_{s}^{LRG1}
+  B1_LRG2:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 1.12
+      scale: 0.1
+    latex: B_1^{LRG2}
+  F_LRG2:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.63
+      scale: 0.1
+    latex: F^{LRG2}
+  Sigpar_LRG2:
+    value: 0.0
+    latex: \Sigma_{\parallel}^{LRG2}
+  Sigperp_LRG2:
+    value: 0.0
+    latex: \Sigma_{\perp}^{LRG2}
+  Sigs_LRG2:
+    value: 0.0
+    latex: \Sigma_{s}^{LRG2}
+  B1_LRG3:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 1.12
+      scale: 0.1
+    latex: B_1^{LRG3}
+  F_LRG3:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.63
+      scale: 0.1
+    latex: F^{LRG3}
+  Sigpar_LRG3:
+    value: 0.0
+    latex: \Sigma_{\parallel}^{LRG3}
+  Sigperp_LRG3:
+    value: 0.0
+    latex: \Sigma_{\perp}^{LRG3}
+  Sigs_LRG3:
+    value: 0.0
+    latex: \Sigma_{s}^{LRG3}
+  B1_ELG1:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 1.12
+      scale: 0.1
+    latex: B_1^{ELG1}
+  F_ELG1:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.63
+      scale: 0.1
+    latex: F^{ELG1}
+  Sigpar_ELG1:
+    value: 0.0
+    latex: \Sigma_{\parallel}^{ELG1}
+  Sigperp_ELG1:
+    value: 0.0
+    latex: \Sigma_{\perp}^{ELG1}
+  Sigs_ELG1:
+    value: 0.0
+    latex: \Sigma_{s}^{ELG1}
+  B1_ELG2:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 1.12
+      scale: 0.1
+    latex: B_1^{ELG2}
+  F_ELG2:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.63
+      scale: 0.1
+    latex: F^{ELG2}
+  Sigpar_ELG2:
+    value: 0.0
+    latex: \Sigma_{\parallel}^{ELG2}
+  Sigperp_ELG2:
+    value: 0.0
+    latex: \Sigma_{\perp}^{ELG2}
+  Sigs_ELG2:
+    value: 0.0
+    latex: \Sigma_{s}^{ELG2}
+  B1_QSO:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 1.12
+      scale: 0.1
+    latex: B_1^{QSO}
+  F_QSO:
+    prior:
+      dist: uniform
+      min: 0.0
+      max: 5.0
+    ref:
+      dist: norm
+      loc: 0.63
+      scale: 0.1
+    latex: F^{QSO}
+  Sigpar_QSO:
+    value: 0.0
+    latex: \Sigma_{\parallel}^{QSO}
+  Sigperp_QSO:
+    value: 0.0
+    latex: \Sigma_{\perp}^{QSO}
+  Sigs_QSO:
+    value: 0.0
+    latex: \Sigma_{s}^{QSO}
+sampler:
+  mcmc:
+    covmat: auto
+#    covmat: /global/cscratch1/sd/sfschen/boss_analysis_joint/covini/bossz3_pk.covini
+    learn_proposal: True
+    learn_proposal_Rminus1_max: 30.0
+    output_every: 60s
+    measure_speeds: False
+    max_tries: 500
+    drag: False
+    oversample_power: 0.4
+    proposal_scale: 1.5
+    Rminus1_stop: 0.01
+    blocking:
+      - [ 1, [w0,wa,logA,omega_b,omega_cdm,H0]]
+      # - [ 1, [logA,omega_b,omega_cdm,H0]]
+      - [ 2, [bsig8_BGS,b2sig8_BGS,bssig8_BGS,b3sig8_BGS,bsig8_LRG1,b2sig8_LRG1,bssig8_LRG1,b3sig8_LRG1,bsig8_LRG2,b2sig8_LRG2,bssig8_LRG2,b3sig8_LRG2,bsig8_LRG3,b2sig8_LRG3,bssig8_LRG3,b3sig8_LRG3,bsig8_ELG1,b2sig8_ELG1,bssig8_ELG1,b3sig8_ELG1,bsig8_ELG2,b2sig8_ELG2,bssig8_ELG2,b3sig8_ELG2,bsig8_QSO,b2sig8_QSO,bssig8_QSO,b3sig8_QSO,B1_BGS,F_BGS,B1_LRG1,F_LRG1,B1_LRG2,F_LRG2,B1_LRG3,F_LRG3,B1_ELG1,F_ELG1,B1_ELG2,F_ELG2,B1_QSO,F_QSO]]
+output: chains/FM/Y1_theory/vel_theory/new/w0wacdm/FSBAO/emu/ell02/pk
+debug: true
+debug_file: chains/FM/Y1_theory/vel_theory/new/w0wacdm/FSBAO/emu/ell02/pk
+timing: true
+stop_on_error: true

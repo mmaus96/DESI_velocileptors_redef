@@ -1,0 +1,195 @@
+theory:
+  FM_likelihoods.pk_likelihood_gc_emu_fs_am_wcdm_redefined.Taylor_pk_theory_zs:
+      zfids:
+      - 1.4
+      # basedir: /global/cscratch1/sd/mmaus/new_template/Cobaya_template/emulator/full_shape/abacus_fid_ini/emu/
+      basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/emulator/FM/wCDM/emu/
+      s8_filenames: 
+      - abacus_s8_wcdm_z1.40.json
+      pk_filenames:
+      - abacus_z_1.40_pkells.json
+      omega_nu: 0.0006442
+      stop_at_error: True
+      
+likelihood:
+  pk_boss_likelihoods_emu_fs_am_wcdm_redefined.abacus_mock_QSO_hex:
+    basedir: /pscratch/sd/m/mmaus/DESI_velocileptors_redef/
+    # linear_param_dict_fn: rsd_likelihood/abacus_linear_params_QSO_hex_redefined_ct_20.yaml
+    linear_param_dict_fn: rsd_likelihood/abacus_linear_params_QSO_redefined_ct_20.yaml
+    fs_kmins:
+    - 0.02
+    fs_mmaxs:
+    - 0.20
+    fs_qmaxs:
+    - 0.20
+    fs_hmaxs:
+    # - 0.20
+    - 0.0
+    
+    # ideal: True
+    kmax_spline:
+    - 0.5
+    include_priors: True
+    optimize: False
+    stop_at_error: True
+    cov_fac: 1.0
+    hexa: False
+    jeff: False
+    
+    
+params:
+  w: 
+    value: -1.0
+    # prior:
+    #   min: -1.5
+    #   max: -0.5
+    #   # min: -2.0
+    #   # max: 1.0
+    # ref:
+    #   dist: norm
+    #   loc:  -0.9
+    #   scale: 0.05
+    latex: w
+  H0:
+    # value: 67.36
+    prior:
+      # min: 60.0
+      # max: 80.0
+      min: 55.0
+      max: 79.0
+    ref:
+      dist: norm
+      loc:  69.848
+      scale: 1.0
+    latex: H_0
+  omega_b:
+    # value: 0.02237
+    prior:
+      dist:  norm
+      loc: 0.02237
+      scale: 0.00037
+      # min: 0.022
+      # max: 0.02274
+    ref:
+      dist: norm
+      loc: 0.02237
+      scale: 0.0001
+    latex: \Omega_\mathrm{b}h^2
+  omega_cdm:
+    # value: 0.12
+    prior:
+      min: 0.08
+      max: 0.16
+      # min: 0.05
+      # max: 0.2
+    ref:
+      dist: norm
+      loc: 0.1
+      scale: 0.05
+    latex: \Omega_\mathrm{cdm}h^2
+  logA:
+    # value: 3.0363942552728806
+    prior:
+      dist: uniform
+      min:  2.03
+      max:  4.03
+      # min:  1.61
+      # max:  3.91
+    ref:
+      dist:  norm
+      loc:   2.7954
+      scale: 0.05
+    latex: \log(10^{10} A_\mathrm{s})
+  sigma8:
+    latex: \sigma_8
+  omegam:
+    latex: \Omega_\mathrm{m}
+  
+    
+  # QSO
+  bsig8_QSO:
+    prior:
+      dist: uniform
+      min:  0.5
+      max:  3.0
+    ref:
+      dist:  norm
+      loc:   1.7239232
+      scale: 0.05
+    latex: (1+b_1^{N3})\sigma_8
+  # b1_QSO:
+  #   prior:
+  #     dist: uniform
+  #     min:  0.5
+  #     max:  4.0
+  #   ref:
+  #     dist:  norm
+  #     loc:   1.7239232
+  #     scale: 0.05
+  #   latex: b1^{QSO}
+  b2sig8_QSO:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   -2.1724898
+      scale: 0.1
+    latex: b_2\sigma_8^{QSO}
+  bssig8_QSO:
+    prior:
+      # dist: uniform
+      # min:  -5.0
+      # max:  5.0
+      dist:  norm
+      loc:   0.0
+      scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_s\sigma_8^{QSO}
+  b3sig8_QSO:
+    value: 0.0
+    # prior:
+    #   # dist: uniform
+    #   # min:  -5.0
+    #   # max:  5.0
+    #   dist:  norm
+    #   loc:   0.0
+    #   scale: 5.0
+    ref:
+      dist:  norm
+      loc:   1.0970124
+      scale: 0.1
+    latex: b_3\sigma_8^{QSO}
+    
+
+
+sampler:
+  mcmc:
+    covmat: auto
+#    covmat: /global/cscratch1/sd/sfschen/boss_analysis_joint/covini/bossz3_pk.covini
+    learn_proposal: True
+    learn_proposal_Rminus1_max: 30.0
+    output_every: 60s
+    measure_speeds: False
+    max_tries: 500
+    drag: False
+    oversample_power: 0.4
+    proposal_scale: 1.5
+    Rminus1_stop: 0.01
+    blocking:
+      # - [ 1, [w,logA,omega_b,omega_cdm,H0]]
+      - [ 1, [logA,omega_b,omega_cdm,H0]]
+      - [ 2, [bsig8_QSO,b2sig8_QSO,bssig8_QSO]]
+      # - [ 2, [bsig8_QSO,b2sig8_QSO,bssig8_QSO,b3sig8_QSO]]
+output: chains/FM/QSO/LCDM/V1/ell02/kmax_0p20/pk
+debug: True
+debug_file: chains/FM/QSO/LCDM/V1/ell02/kmax_0p20/pk
+timing: True
+stop_on_error: True
